@@ -6,12 +6,10 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
         new_list = []
-        for i in range(len(list1)):
-            for j in range(len(list2)):
-                if le
-                new_list.append(i)
-                list1.pop(i)
-                new_list.append(j)
+
+        while any(list1):
+            for 
+
 
         return new_list
 
@@ -20,3 +18,4 @@ obj = Solution()
 arr1 = [1, 2, 4]
 arr2 = [3, 7, 8]
 print(obj.mergeTwoLists(arr1, arr1))
+#output = [1,3,2,7,4,8]
