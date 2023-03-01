@@ -5,14 +5,13 @@ class Solution(object):
         :type list2: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        new_list = []
-
-        while any(list1):
-            for 
-
-
-        return new_list
-
+        for i in range(0,len(list1),2):
+            for j in list2:
+                list1.insert(i, j)
+                list2.remove(j)
+                print(j)
+                continue
+        return list1
 
 obj = Solution()
 arr1 = [1, 2, 4]
